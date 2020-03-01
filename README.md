@@ -85,34 +85,34 @@ php artisan make:middleware NombreMiddleware
 
 ## Tipos de usuarios
 Administrador podra:
-  Crear Clases para los maestros
-  Matricular los alumnos en las clases
+  * Crear Clases para los maestros
+  * Matricular los alumnos en las clases
 
 
 Al Logear un maestro:
-  Mostrar las clases que tiene asignada
-  Mostrar los alumnos en esa clase
+  * Mostrar las clases que tiene asignada
+  * Mostrar los alumnos en esa clase
 
 
 Alumno al Logearse:
-  Ver las clases en la que está matriculado
-  Ver su nota de la clase
-  Ver información del edificio
+  * Ver las clases en la que está matriculado
+  * Ver su nota de la clase
+  * Ver información del edificio
 
 
 Usuarios registrados en la base
-  -griseborough0 - Maestro, idempleado:1
-  -20174352632 - Alumno, idAlumno:1
+  * griseborough0 - Maestro, idempleado:1
+  * 20174352632 - Alumno, idAlumno:1
   
 
 Listar las clases de un maestro
-  -> Los Alumnos matriculados en una clase
-    -> Las notas de ese alumno
-      -> Actualizar y agregar notas de ese alumno
+  * Los Alumnos matriculados en una clase
+  * Las notas de ese alumno
+  * Actualizar y agregar notas de ese alumno
 
 
 Listar las clases de un alumno
-  -> Las notas de una clase en especifico
+  * Las notas de una clase en especifico
 
 
 ### Tablas de la base
@@ -129,6 +129,8 @@ Listar las clases de un alumno
 
 
 Calificaciones:
+
+
 Se tiene un historial de notas del alumno 
 
 * Indice Parcial: Nota Final del Parcial
