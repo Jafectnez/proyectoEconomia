@@ -51,6 +51,8 @@ views/contenido/contenido.blade.php
 Instalar la Versión LTS (estable) de Node.js
 ```
 npm install - instala todas las dependencias de laravel
+```
+```
 npm run dev - compila el js y css
 ```
 
