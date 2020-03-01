@@ -33,9 +33,6 @@ laravel new educacion
 para correr el servidor artisan que viene incluido con Laravel usando la terminal y :
 php artisan serve
 
-Tambien se puede revisar el proyecto usando el servidor apache activado:
-http://localhost/educacion/public/
-
 Página principal del proyecto:
 views/contenido/contenido.blade.php
 
