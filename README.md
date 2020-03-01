@@ -116,16 +116,16 @@ Listar las clases de un alumno
 
 
 ### Tablas de la base
--Persona
--Telefono
--Alumno
--Empleado
--Edificio
--Asignatura
--Asignatura_Grado
--Aula
--Clase
--Alumno_Clase
+* Persona
+* Telefono
+* Alumno
+* Empleado
+* Edificio
+* Asignatura
+* Asignatura_Grado
+* Aula
+* Clase
+* Alumno_Clase
 
 
 Calificaciones:
@@ -138,14 +138,23 @@ Se tiene un historial de notas del alumno
 * Indice Global: Suma de todas los "Indice de Clase"
 
 
-En Duro:
--------------------------------------
+### En duro:
 tipo_calificacion:
+
+
 1 Nota Final Parcial (asumimos 2 parciales)
+
+
 2 Tarea
+
+
 3 Examen
 
 
 parcial: 
+
+
 Parcial I
+
+
 Parcial II
