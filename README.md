@@ -69,6 +69,9 @@ Crear un Modelo:
 php artisan make:model Flight
 ```
 
+Los archivos DDL para llenar las tablas estan ubicados en: tests/SQL tests/02.SQLFiles/05.TestData
+
+
 Los controladores se guardan en: App/Http/Controllers/controlador
 
 
@@ -84,7 +87,7 @@ Es importante poner las rutas en:
 routes/web.php
 
 
-Para la cración de middlewares:
+Para la creación de middlewares:
 ```
 php artisan make:middleware NombreMiddleware
 ```
