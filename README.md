@@ -28,9 +28,9 @@ objetos de PHP y no tener que ejecutar codigo sql
 
 Instalar Composer para luego instalar Laravel
 Comando de composer:
+```
 composer global require "laravel/installer"
-laravel new educacion
-
+```
 
 Instalar JSON viewer para ver el formato de un JSON en el navegador
 
