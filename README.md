@@ -100,8 +100,9 @@ Alumno al Logearse:
   Ver información del edificio
 
 
-  griseborough0 - Maestro, idempleado:1
-  20174352632 - Alumno, idAlumno:1
+Usuarios registrados en la base
+  -griseborough0 - Maestro, idempleado:1
+  -20174352632 - Alumno, idAlumno:1
   
 
 Listar las clases de un maestro
