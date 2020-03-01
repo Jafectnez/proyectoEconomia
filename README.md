@@ -49,8 +49,8 @@ views/contenido/contenido.blade.php
 
 
 Instalar la Versión LTS (estable) de Node.js
-npm install - instala todas las dependencias de laravel
 ```
+npm install - instala todas las dependencias de laravel
 npm run dev - compila el js y css
 ```
 
@@ -60,12 +60,16 @@ php artisan migrate
 ```
 
 Los modelos se guardan en: App
+
+
 Crear un Modelo:
 ```
 php artisan make:model Flight
 ```
 
 Los controladores se guardan en: App/Http/Controllers/controlador
+
+
 Crear un controlador:
 ```
 php artisan make:controller NombreController --resource
@@ -142,21 +146,11 @@ Se tiene un historial de notas del alumno
 
 ### En duro:
 tipo_calificacion:
-
-
-1 Nota Final Parcial (asumimos 2 parciales)
-
-
-2 Tarea
-
-
-3 Examen
+* 1 Nota Final Parcial (asumimos 2 parciales)
+* 2 Tarea
+* 3 Examen
 
 
 parcial: 
-
-
-Parcial I
-
-
-Parcial II
+* Parcial I
+* Parcial II
