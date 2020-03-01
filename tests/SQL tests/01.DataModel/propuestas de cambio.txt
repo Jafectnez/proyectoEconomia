@@ -1,0 +1,25 @@
+Calificaciones:
+Se tiene un historial de notas del alumno 
+
+* Indice Parcial: Nota Final del Parcial
+
+* Indice Clase: Nota Final (Notas Finales del Parciales)/(Numero de Parciales)
+
+* Indice Global: Suma de todas los "Indice de Clase"
+
+En Duro:
+-------------------------------------
+tipo_calificacion:
+1 Nota Final Parcial (asumimos 2 parciales)
+2 Tarea
+3 Examen
+
+parcial: 
+Parcial I
+Parcial II
+
+
+
+
+
+

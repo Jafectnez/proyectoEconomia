@@ -1,0 +1,10 @@
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (1, 6, 'Jamia', 'RU', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (2, 2, 'Abata', 'CN', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (3, 10, 'Wikivu', 'CO', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (4, 5, 'Brainlounge', 'ID', 'I');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (5, 5, 'Tagpad', 'UA', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (6, 10, 'Mita', 'PL', 'I');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (7, 4, 'Buzzster', 'TN', 'I');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (8, 9, 'Quinu', 'CN', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (9, 4, 'Rhybox', 'PE', 'A');
+insert into aula (id_aula, id_edificio, nombre_aula, codigo_aula, estado) values (10, 2, 'Twitternation', 'PH', 'A');

@@ -1,0 +1,14 @@
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (1, 'Matemáticas', 'MM', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (2, 'Español', 'EE', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (3, 'Ciencias Naturales', 'CN', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (4, 'Ciencias Sociales', 'CS', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (5, 'Filosofía', 'FF', 'LuMaMiJu', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (6, 'Cívica', 'CV', 'LuMaMiJu', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (7, 'Química', 'QQ', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (8, 'Física Elemental', 'FE', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (9, 'Educación Fisica', 'EF', 'LuMaMi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (10, 'Biología', 'BB', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (11, 'Historia', 'HH', 'LuMaMiJu', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (12, 'Programación', 'PP', 'LuMaMiJuVi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (13, 'Trabajo de Campo', 'TC', 'LuMaMi', 'A');
+insert into asignatura (id_asignatura, nombre_asignatura, codigo_asignatura, dias, estado) values (14, 'Costos', 'CC', 'LuMaMiJuVi', 'A');

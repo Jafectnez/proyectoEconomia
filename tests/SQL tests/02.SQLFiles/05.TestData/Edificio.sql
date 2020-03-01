@@ -1,0 +1,10 @@
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (1, 'Murano', 'CN', 'I');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (2, 'Sierra 3500', 'PL', 'I');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (3, 'Aztek', 'PH', 'I');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (4, 'Quattroporte', 'ID', 'A');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (5, 'Legacy', 'PH', 'A');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (6, 'Alcyone SVX', 'NO', 'I');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (7, 'Yukon XL 1500', 'KR', 'A');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (8, 'Legacy', 'CN', 'A');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (9, 'Savana 1500', 'SA', 'I');
+insert into edificio (id_edificio, nombre_edificio, codigo_edificio, estado) values (10, 'S40', 'RS', 'I');

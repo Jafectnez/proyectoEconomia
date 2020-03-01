@@ -1,0 +1,8 @@
+.botones-login{
+  transform: translateX(25%);
+}
+
+#spn-empleado, #spn-alumno{
+  font-size: 17px;
+  padding: 10px;
+}
