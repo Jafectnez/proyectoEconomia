@@ -109,7 +109,8 @@ Alumno al Logearse:
   * Ver información del edificio
 
 
-Usuarios registrados en la base
+Usuarios registrados en la base para ejemplo (password: asd.456)
+  * cdorinq - Administrador, idempleado:27
   * griseborough0 - Maestro, idempleado:1
   * 20174352632 - Alumno, idAlumno:1
   
