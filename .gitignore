@@ -1,8 +1,8 @@
 /node_modules
 public/js/app.js
 public/js/app.js
-composer.json
 composer.lock
+package.lock.json
 public/js/app.js
 vendor/autoload.php
 vendor/barryvdh/laravel-dompdf/composer.json
