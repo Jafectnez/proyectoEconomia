@@ -4,6 +4,7 @@ public/js/app.js
 composer.lock
 package.lock.json
 public/js/app.js
+/vendor
 vendor/autoload.php
 vendor/barryvdh/laravel-dompdf/composer.json
 vendor/barryvdh/laravel-dompdf/config/dompdf.php
