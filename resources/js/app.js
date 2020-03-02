@@ -41,7 +41,7 @@ Vue.component('notification', require('./components/Notification.vue').default);
 Vue.component('edificio-alumno', require('./components/Edificio-alumno.vue').default);
 Vue.component('aula-alumno', require('./components/Aula-alumno.vue').default);
 Vue.component('clase-alumno', require('./components/Clase-alumno.vue').default);
-Vue.component('grado-alumno', require('./components/grado-alumno.vue').default);
+Vue.component('grado-alumno', require('./components/Grado-alumno.vue').default);
 
 //Componentes para maestro
 Vue.component('clase-maestro', require('./components/Clase-maestro.vue').default);
