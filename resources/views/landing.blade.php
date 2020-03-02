@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Foodlanding - Bootstrap Landing Template</title>
+  <title>Sistema de Gestión Educativa (SGE)</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -43,14 +43,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="img/logo.png" width="30"></a>
+        <a class="navbar-brand" href="#"></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#h" class="smoothscroll">Home</a></li>
-          <li><a href="#chefs" class="smoothscroll">Chefs</a></li>
-          <li><a href="#dishes" class="smoothscroll">Dishes</a></li>
-          <li><a href="#contact" class="smoothscroll">Contact</a></li>
+          <li class="active"><a href="#h" class="smoothscroll">Inicio</a></li>
+          <li><a href="#chefs" class="smoothscroll">Sobre nosotros</a></li>
+          <li><a href="#chefs" class="smoothscroll">Precios</a></li>
+          <li><a href="#contact" class="smoothscroll">Contacto</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -62,13 +62,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 welcome">
-          <h1>A LANDING PAGE<br/>FOR YOUR RESTAURANT</h1>
+          <h1>TU MEJOR ALIADO<br/>EN LA EDUCACIÓN</h1>
           <hr class="aligncenter">
-          <p>Enjoy the experience of our restaurant.<br/>Register to know our latest news.</p>
+          <p>Pensada para padres de familia y profesores por igual, para que puedan tener una relación más eficiente sin la necesidad de tener que movilizarse.</p>
           <div class="col-md-10 col-md-offset-1 centered mt">
             <form role="form" action="register.php" method="post" enctype="plain">
-              <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-              <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Subscribe</button>
+              <input type="email" name="email" class="subscribe-input" placeholder="Correo electronico..." required>
+              <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Suscribirse</button>
             </form>
           </div>
         </div>
@@ -82,30 +82,30 @@
   <!-- ********** WHITE SECTION ********** -->
   <div class="container">
     <div class="row mtb centered">
-      <h3>HANDSOME LANDING. AWESOME EXPERIENCES.</h3>
+      <h3>NUESTROS SERVICIOS.</h3>
       <hr class="aligncenter mb">
 
       <div class="col-md-3">
-        <i class="ion-ios-wineglass og"></i>
-        <h5>TRULY TASTEFUL</h5>
+        <i class="ion-easel og"></i>
+        <h5>CLASES ONLINE</h5>
         <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <!--/col-md-3 -->
       <div class="col-md-3">
-        <i class="ion-ios-location og"></i>
-        <h5>8 CITIES</h5>
+        <i class="ion-ios-speedometer-outline og"></i>
+        <h5>GESTION</h5>
         <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <!--/col-md-3 -->
       <div class="col-md-3">
-        <i class="ion-ios-calculator og"></i>
-        <h5>AFFORDABLE PRICES</h5>
+        <i class="ion-ios-paperplane-outline og"></i>
+        <h5>MENSAJERIA</h5>
         <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <!--/col-md-3 -->
       <div class="col-md-3">
-        <i class="ion-ios-cart og"></i>
-        <h5>WE DELIVER</h5>
+        <i class="ion-ios-paper-outline og"></i>
+        <h5>REPORTES</h5>
         <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <!--/col-md-3 -->
@@ -123,16 +123,9 @@
   <!-- ********** MEET THE CHEFS SECTION ********** -->
   <div class="container" id="chefs">
     <div class="row mtb">
-      <h3 class="centered">MEET OUR AWESOME CHEFS</h3>
+      <h3 class="centered">LLEVA TU INSTITUCION AL SIGUIENTE NIVEL</h3>
       <hr class="aligncenter mb">
       <div class="col-md-2 col-sm-2">
-        <div class="tabbable">
-          <ul class="nav nav-stacked" id="myTab">
-            <li class="active"><a href="#tab1">David Harrison</a></li>
-            <li class=""><a href="#tab2">Patrick Dawson</a></li>
-          </ul>
-          <!-- /tabs -->
-        </div>
         <!-- /tabbable -->
       </div>
       <!--/col-md-2 -->
@@ -144,8 +137,6 @@
             <!-- FIRST PROFILE -->
             <div class="row">
               <div class="col-md-8 col-sm-8">
-                <h4><b>David Harrison</b></h4>
-                <h6>TOP CHEF</h6>
                 <p class="rating">
                   <i class="ion-ios7-star"></i>
                   <i class="ion-ios7-star"></i>
@@ -154,38 +145,17 @@
                   <i class="ion-ios7-star"></i>
                 </p>
                 <br>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-              <div class="col-md-4 col-sm-4">
-                <img class="img-responsive aligncenter" src="img/chef01.png" alt="">
-              </div>
-            </div>
-            <!-- /row -->
-          </div>
-          <!-- /tab-pane -->
-
-          <div class="tab-pane" id="tab2">
-            <!-- FIRST PROFILE -->
-            <div class="row">
-              <div class="col-md-8 col-sm-8">
-                <h4><b>Patrick Dawson</b></h4>
-                <h6>MASTER CHEF</h6>
-                <p class="rating">
-                  <i class="ion-ios7-star"></i>
-                  <i class="ion-ios7-star"></i>
-                  <i class="ion-ios7-star"></i>
-                  <i class="ion-ios7-star"></i>
-                  <i class="ion-ios7-star-half"></i>
+                <p>Ofrecemos una plataforma a los profesores para
+                  que puedan subir las notas y/u observaciones sobre sus alumnos. De igual manera
+                  la plataforma funcions para que los estudiantes puedan subir tareas a un
+                  campus virtual.
+                  <br>
+                  Para los padres de familia la plataforma ofrece un punto de conexión con el profesor, desde la comodidad de su hogar o el trabajo, de forma rapida y eficiente.
                 </p>
-                <br>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                
               </div>
               <div class="col-md-4 col-sm-4">
-                <img class="img-responsive aligncenter" src="img/chef02.png" alt="">
+                <img class="img-responsive aligncenter" style="width: 300px" src="img/landing/landing-3.png" alt="">
               </div>
             </div>
             <!-- /row -->
@@ -302,9 +272,9 @@
   <div id="f">
     <div class="container">
       <div class="row">
-        <h3 class="centered">SUBSCRIBE TO OUR NEWSLETTER</h3>
+        <h3 class="centered">SUSCRIBETE PARA MAS INFORMACIÓN</h3>
         <hr class="aligncenter mb">
-        <p class="text-p centered">We will let you know all our awesome offers.</p>
+        <p class="text-p centered">Un agente se pondra en contacto en tan solo unos minutos.</p>
         <div class="col-md-6 col-md-offset-3 centered">
           <form role="form" action="register.php" method="post" enctype="plain">
             <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
@@ -320,30 +290,30 @@
   <div id="contact">
     <div class="container">
       <div class="col-md-8 col-md-offset-2">
-        <h3 class="centered">CONTACT US</h3>
+        <h3 class="centered">CONTACTO</h3>
         <hr class="aligncenter mb">
 
         <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
           <div class="form-group">
-            <label for="contact-name">Your Name</label>
-            <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+            <label for="contact-name">Nombre</label>
+            <input type="name" name="name" class="form-control" id="contact-name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <label for="contact-email">Your Email</label>
-            <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            <label for="contact-email">Email</label>
+            <input type="email" name="email" class="form-control" id="contact-email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <label for="contact-subject">Subject</label>
-            <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+            <label for="contact-subject">Consulta</label>
+            <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Breve descripcion" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
             <div class="validate"></div>
           </div>
 
           <div class="form-group">
-            <label for="contact-message">Your Message</label>
-            <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+            <label for="contact-message">Mensaje</label>
+            <textarea class="form-control" name="message" id="contact-message" placeholder="Escribe tu mensaje" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
             <div class="validate"></div>
           </div>
 
@@ -352,7 +322,7 @@
           <div class="sent-message">Your message has been sent. Thank you!</div>
 
           <div class="form-send">
-            <button type="submit" class="btn btn-large">Send Message</button>
+            <button type="submit" class="btn btn-large">Enviar mensaje</button>
           </div>
 
         </form>
