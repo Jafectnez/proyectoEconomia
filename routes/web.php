@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/landing', 'LandingController@showLanding')->name('landing'); // Muestra el landing page
 
 // Grupo de Rutas para un Usuario No Autenticado
 Route::group(['middleware'=>['guest']], function(){
