@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'Auth\LoginController@showLoginForm'); // Muestra el formulario de Login
+Route::get('/home', 'Auth\LoginController@showLoginForm')->name('home'); // Muestra el formulario de Login
 
 // Grupo de Rutas para un Usuario No Autenticado
 Route::group(['middleware'=>['guest']], function(){
