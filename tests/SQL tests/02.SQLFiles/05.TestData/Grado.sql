@@ -43,6 +43,3 @@ INSERT INTO `grado` (`id_grado`, `nombre_grado`, `codigo_grado`, `cantidad_asign
 (12, 'Bachiller Técnico en Ciencias de la Computación', 'BTC', 12, 'A', NULL, NULL),
 (13, 'Bachiller en Ciencias Agropecuarias', 'BCA', 12, 'A', NULL, NULL);
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

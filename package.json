@@ -1,6 +1,11 @@
 {
     "private": true,
+    "engines":{
+        "node": "12.13.0",
+        "npm": "6.9.0"
+    },
     "scripts": {
+        "build": "npm run dev",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
