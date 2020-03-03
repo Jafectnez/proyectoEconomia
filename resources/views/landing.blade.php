@@ -175,99 +175,6 @@
   <!-- ********** PARALLAX SEPARATOR SECTION ********** -->
   <div class="sep s02" data-stellar-background-ratio="0.5"></div>
 
-  <!-- ********** MENU SLIDER SECTION ********** -->
-  <div class="container" id="dishes">
-    <div class="row mtb">
-      <h3 class="centered">EXCLUSIVE MENU</h3>
-      <hr class="aligncenter mb">
-      <p class="text-p centered">Enjoy our meals. You can click each menu to display more information.</p>
-      <div class="col-md-10 col-md-offset-1">
-        <div id="mi-slider" class="mi-slider">
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/1.png" alt="img01"><h4>Salmon</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/2.png" alt="img02"><h4>Seafood Platter</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/3.png" alt="img03"><h4>Crawfish</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/4.png" alt="img04"><h4>Bouillabaisse</h4></a></li>
-          </ul>
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/5.png" alt="img05"><h4>Steak</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/6.png" alt="img06"><h4>Ribs &amp; Bread</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/7.png" alt="img07"><h4>Pork</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/8.png" alt="img08"><h4>Lasagna</h4></a></li>
-          </ul>
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/9.png" alt="img09"><h4>Banana Pudding</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/10.png" alt="img10"><h4>Black Bottom Pie</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/11.png" alt="img11"><h4>Black Forest</h4></a></li>
-          </ul>
-          <nav>
-            <a href="#">SeaFood</a>
-            <a href="#">Meat</a>
-            <a href="#">Desserts</a>
-          </nav>
-        </div>
-      </div>
-      <!--/col-md-10 -->
-    </div>
-    <!--/row -->
-  </div>
-  <!--/container -->
-
-  <!-- MODAL DEMO FOR A MENU ITEM -->
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h5 class="modal-title" id="myModalLabel">Skillet Poached Eggs</h5>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive aligncenter" src="img/modalbg.jpg" alt="">
-          <h4>Poached Eggs</h4>
-          <p class="text-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          <p class="text-p">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-          <h5>Price..........$29</h5>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-    <!--/modal-dialog -->
-  </div>
-  <!-- /modal -->
-
-
-  <!-- ********** PARALLAX SEPARATOR SECTION ********** -->
-  <div class="sep s03" data-stellar-background-ratio="0.5"></div>
-
-
-  <!-- ********** PHONE USER SECTION ********** -->
-  <div class="container">
-    <div class="row mt">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>RESERVE VIA YOUR PHONE</h3>
-        <hr class="mb">
-        <p class="text-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        <p class="text-p">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-          undoubtable source.</p>
-        <p class="text-p">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
-        <p class="down">
-          <i class="ion-social-apple"></i>
-          <i class="ion-social-android"></i>
-        </p>
-      </div>
-
-      <div class="col-md-3">
-        <img src="img/phone.png" class="aligncenter" width="240" alt="">
-      </div>
-
-    </div>
-    <!--/row -->
-  </div>
-  <!--/container -->
-
   <!-- ********** FOOTER SECTION ********** -->
   <div id="f">
     <div class="container">
@@ -333,7 +240,7 @@
   <div id="copyrights">
     <div class="container">
       <p>
-        &copy; Copyrights <strong>FoodLanding</strong>. All Rights Reserved
+        &copy; Copyrights <strong>Sistema de Gestión Educativa (SGE)</strong>. All Rights Reserved
       </p>
       <div class="credits">
         <!--
@@ -342,7 +249,6 @@
           Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/foodlanding-bootstrap-landing-template/
           Licensing information: https://templatemag.com/license/
         -->
-        Created with FoodLanding template by <a href="https://templatemag.com/">TemplateMag</a>
       </div>
     </div>
   </div>
