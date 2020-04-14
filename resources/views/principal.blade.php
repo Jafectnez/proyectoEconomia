@@ -91,11 +91,6 @@
     </div>
     <!-- Fin App -->
 
-    <footer class="app-footer" style="position: fixed;left: 0px;bottom: 0px;height: 35px;width: 100%;">
-      <span><a href="#">Sistema Gestión Educación</a> &copy; 2019</span>
-      <span class="ml-auto">Desarrollado por <a href="#">Ariel Guardado y Allan Martínez</a></span>
-    </footer>
-
     <!-- Contiene todo el Javascript -->
     <script src="js/app.js"></script>
     <script src="js/all.js"></script>
