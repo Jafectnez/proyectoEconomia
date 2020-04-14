@@ -97,6 +97,11 @@
         <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <!--/col-md-3 -->
+      <div class="col-md-3">
+        <i class="ion-easel og"></i>
+        <h5>APRENDIZAJE VIRTUAL</h5>
+        <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
 
     </div>
     <!--/row -->
