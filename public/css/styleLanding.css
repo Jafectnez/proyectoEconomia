@@ -220,7 +220,7 @@ input {
 
 .subscribe-input {
   float: left;
-  width: 70%;
+  width: 60%;
   text-align: left;
   margin-right: 2px;
 }
@@ -245,7 +245,7 @@ input {
 /* HEADER SECTION */
 
 #h {
-  background: url(../img/header.jpg) no-repeat center top;
+  background: url(../img/landing/landing-1.jpg) no-repeat center top;
   padding-top: 150px;
   text-align: center;
   background-attachment: relative;
@@ -321,11 +321,11 @@ i {
 }
 
 .s01 {
-  background-image: url(../img/s01.jpg);
+  background-image: url(../img/landing/landing-2.jpg);
 }
 
 .s02 {
-  background-image: url(../img/s02.jpg);
+  background-image: url(../img/landing/landing-4.jpg);
 }
 
 .s03 {
