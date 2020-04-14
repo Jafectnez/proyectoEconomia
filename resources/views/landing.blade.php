@@ -48,7 +48,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#h" class="smoothscroll">Inicio</a></li>
-          <li><a href="/" class="smoothscroll">Iniciar Sesión</a></li>
+          <li><a onclick="document.location='/login'" class="smoothscroll">Iniciar Sesión</a></li>
           <!-- <li><a href="#chefs" class="smoothscroll">Precios</a></li> -->
           <!-- <li><a href="#contact" class="smoothscroll">Contacto</a></li> -->
         </ul>

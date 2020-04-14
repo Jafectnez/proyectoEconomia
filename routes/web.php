@@ -12,7 +12,7 @@
 */
 Route::get('/landing', 'LandingController@showLanding')->name('landing'); // Muestra el landing page
 
-Route::get('/', 'Auth\LoginController@showLoginForm')->name('login'); // Muestra el formulario de Login
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login'); // Muestra el formulario de Login
 
 // Grupo de Rutas para un Usuario No Autenticado
 Route::group(['middleware'=>['guest']], function(){
