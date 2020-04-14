@@ -65,12 +65,6 @@
           <h1>TU MEJOR ALIADO<br/>EN LA EDUCACIÓN</h1>
           <hr class="aligncenter">
           <p>Pensada para padres de familia y profesores por igual, para que puedan tener una relación más eficiente sin la necesidad de tener que movilizarse.</p>
-          <div class="col-md-10 col-md-offset-1 centered mt">
-            <form role="form" action="register.php" method="post" enctype="plain">
-              <input type="email" name="email" class="subscribe-input" placeholder="Correo electronico..." required>
-              <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Suscribirse</button>
-            </form>
-          </div>
         </div>
       </div>
       <!--/row -->
@@ -176,71 +170,10 @@
   <div class="sep s02" data-stellar-background-ratio="0.5"></div>
 
   <!-- ********** FOOTER SECTION ********** -->
-  <div id="f">
-    <div class="container">
-      <div class="row">
-        <h3 class="centered">SUSCRIBETE PARA MAS INFORMACIÓN</h3>
-        <hr class="aligncenter mb">
-        <p class="text-p centered">Un agente se pondra en contacto en tan solo unos minutos.</p>
-        <div class="col-md-6 col-md-offset-3 centered">
-          <form role="form" action="register.php" method="post" enctype="plain">
-            <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-            <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <!--/row -->
-    </div>
-    <!--/container -->
-  </div>
-
-  <div id="contact">
-    <div class="container">
-      <div class="col-md-8 col-md-offset-2">
-        <h3 class="centered">CONTACTO</h3>
-        <hr class="aligncenter mb">
-
-        <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-          <div class="form-group">
-            <label for="contact-name">Nombre</label>
-            <input type="name" name="name" class="form-control" id="contact-name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Email</label>
-            <input type="email" name="email" class="form-control" id="contact-email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Consulta</label>
-            <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Breve descripcion" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-            <div class="validate"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-message">Mensaje</label>
-            <textarea class="form-control" name="message" id="contact-message" placeholder="Escribe tu mensaje" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-            <div class="validate"></div>
-          </div>
-
-          <div class="loading"></div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-
-          <div class="form-send">
-            <button type="submit" class="btn btn-large">Enviar mensaje</button>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
   <div id="copyrights">
     <div class="container">
       <p>
-        &copy; Copyrights <strong>Sistema de Gestión Educativa (SGE)</strong>. All Rights Reserved
+        &copy; Copyright 2020 <strong>Sistema de Gestión Educativa (SGE)</strong>. All Rights Reserved
       </p>
       <div class="credits">
         <!--
