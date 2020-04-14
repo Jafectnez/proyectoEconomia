@@ -48,9 +48,9 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#h" class="smoothscroll">Inicio</a></li>
-          <li><a href="#chefs" class="smoothscroll">Sobre nosotros</a></li>
-          <li><a href="#chefs" class="smoothscroll">Precios</a></li>
-          <li><a href="#contact" class="smoothscroll">Contacto</a></li>
+          <li><a href="/" class="smoothscroll">Iniciar Sesión</a></li>
+          <!-- <li><a href="#chefs" class="smoothscroll">Precios</a></li> -->
+          <!-- <li><a href="#contact" class="smoothscroll">Contacto</a></li> -->
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -78,12 +78,6 @@
     <div class="row mtb centered">
       <h3>NUESTROS SERVICIOS.</h3>
       <hr class="aligncenter mb">
-
-      <div class="col-md-3">
-        <i class="ion-easel og"></i>
-        <h5>CLASES ONLINE</h5>
-        <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-      </div>
       <!--/col-md-3 -->
       <div class="col-md-3">
         <i class="ion-ios-speedometer-outline og"></i>
