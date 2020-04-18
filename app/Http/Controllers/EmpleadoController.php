@@ -266,7 +266,7 @@ class EmpleadoController extends Controller
         //$empleado->fecha_ingreso = $request->fecha_ingreso; // No deberia ser posible cambiarlo una vez creado
         $empleado->usuario = $request->usuario;
         
-        $empleado->contrasena = Hash::make($request->contrasena);
+        // $empleado->contrasena = Hash::make($request->contrasena);
         
         $empleado->foto_url = "url.com"; // $request->foto_url;
         $empleado->sesion = date("Y").'-'.date("m").'-'.date("d"); //$request->sesion;

@@ -466,7 +466,7 @@
           'telefono':this.telefono,
 
           //'codigo_alumno': this.codigo_alumno,
-          'contrasena': this.contrasena,
+          // 'contrasena': this.contrasena,
           //'promerio': this.promerio,
           'fecha_ingreso': this.fecha_ingreso,
           'foto_url': this.foto_url
@@ -787,7 +787,7 @@
 
                 this.telefono = data['telefono'];
                 
-                this.contrasena = data['contrasena'];
+                this.contrasena = 'asd.456';
                 this.fecha_ingreso = data['fecha_ingreso'];
                 this.foto_url = data['foto_url'];
                 this.sesion = data['sesion'];

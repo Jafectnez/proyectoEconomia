@@ -266,7 +266,7 @@ class AlumnoController extends Controller
 
         $alumno->id_tipo_usuario = 4; //El alumno siempre tendra como tipo de usuario 4
         //$alumno->codigo_alumno = $request->codigo_alumno; // No deberia ser posible cambiarlo una vez creado
-        $alumno->contrasena = Hash::make($request->contrasena);
+        // $alumno->contrasena = Hash::make($request->contrasena);
         //$alumno->indice_global  = $request->indice_global ;
         //$alumno->fecha_ingreso = $request->fecha_ingreso; // No deberia ser posible cambiarlo una vez creado
         $alumno->foto_url = "url.com"; // $request->foto_url;

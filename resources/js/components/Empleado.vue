@@ -525,7 +525,7 @@
           'id_cargo': this.id_cargo,
           'fecha_ingreso': this.fecha_ingreso,
           'usuario': this.usuario,
-          'contrasena': this.contrasena,
+          // 'contrasena': this.contrasena,
           'foto_url': this.foto_url
 
         }).then(function(response){
@@ -884,7 +884,7 @@
                 this.id_cargo = data['id_cargo'];
                 this.fecha_ingreso = data['fecha_ingreso'];
                 this.usuario = data['usuario'];
-                this.contrasena = data['contrasena'];
+                this.contrasena = 'asd.456';
                 this.foto_url = data['foto_url'];
                 this.sesion = data['sesion'];                
                 //,this.estado = data['estado'];
