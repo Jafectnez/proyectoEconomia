@@ -469,7 +469,7 @@
           'contrasena': this.contrasena,
           //'promerio': this.promerio,
           'fecha_ingreso': this.fecha_ingreso,
-          'foto_url': this.foto_url,
+          'foto_url': this.foto_url
 
         }).then(function(response){
           me.cerrarModal();
@@ -483,8 +483,10 @@
 
         })
         .catch(function(error) {
-          var ArrayErrores = Object.assign({}, error).response.data.errors;
+          console.log('Uy chele');
+          var ArrayErrores = Object.assign({}, error).response.data;
 
+          console.log(ArrayErrores);
           // console.log('Error:', ArrayErrores);
 
           if(ArrayErrores['primer_nombre']){
@@ -715,6 +717,7 @@
           "primer_apellido" : {'error': 0, 'mensaje': ''},
           "numero_identidad" : {'error': 0, 'mensaje': ''},
           "correo_electronico" : {'error': 0, 'mensaje': ''},
+          "fecha_nacimiento" : {'error': 0, 'mensaje': ''},
 
           "contrasena" : {'error': 0, 'mensaje': ''},
 
@@ -732,6 +735,7 @@
           "primer_apellido" : {'error': 0, 'mensaje': ''},
           "numero_identidad" : {'error': 0, 'mensaje': ''},
           "correo_electronico" : {'error': 0, 'mensaje': ''},
+          "fecha_nacimiento" : {'error': 0, 'mensaje': ''},
 
           "contrasena" : {'error': 0, 'mensaje': ''},
 
@@ -784,7 +788,7 @@
                 this.direccion = data['direccion'];
 
                 this.telefono = data['telefono'];
-
+                
                 this.contrasena = data['contrasena'];
                 this.fecha_ingreso = data['fecha_ingreso'];
                 this.foto_url = data['foto_url'];

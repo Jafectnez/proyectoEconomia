@@ -218,14 +218,19 @@ class AlumnoController extends Controller
   
       try{
         DB::beginTransaction();
+        // Instancia de la clase Persona, la clase persona es el modelo Persona
+        $alumno = Alumno::findOrFail($request->id_alumno);
+        $persona = Persona::findOrFail($alumno->id_persona);
+        $telefono = Telefono::where('id_persona', '=', $persona->id_persona)->first();
+
         //Reglas y mensajes de errores para validación de persona
         $reglasPersona = [
           'primer_nombre' => 'required|max:50',
           'primer_apellido' => 'required|max:50',
-          'numero_identidad' => 'required|unique:persona,numero_identidad, '.$this->id_persona.', id_persona',
-          'correo_electronico' => 'required|unique:persona,correo_electronico, '.$this->id_persona.', id_persona',
+          'numero_identidad' => 'required|unique:persona,numero_identidad,'.$alumno->id_persona.',id_persona',
+          'correo_electronico' => 'required|unique:persona,correo_electronico,'.$alumno->id_persona.',id_persona',
           'fecha_nacimiento' => 'date|before_or_equal:'.date('Y-m-d', strtotime("-4 years")),
-          'telefono' => 'required|unique:telefono,telefono'
+          'telefono' => 'required|unique:telefono,telefono,'.$alumno->id_persona.',id_persona'
         ];
 
         $erroresPersona = [
@@ -244,11 +249,6 @@ class AlumnoController extends Controller
 
         //Se validan los datos recibidos
         $this->validate($request, $reglasPersona, $erroresPersona);
-
-        // Instancia de la clase Persona, la clase persona es el modelo Persona
-        $alumno = Alumno::findOrFail($request->id_alumno);
-        $persona = Persona::findOrFail($alumno->id_persona);
-        $telefono = Telefono::where('id_persona', '=', $persona->id_persona)->first();
         
         $persona->primer_nombre = $request->primer_nombre;
         $persona->segundo_nombre = $request->segundo_nombre;
@@ -264,7 +264,7 @@ class AlumnoController extends Controller
         $telefono->telefono = $request->telefono;
         $telefono->save();
 
-        $alumno->id_tipo_usuario = $request->id_tipo_usuario;
+        $alumno->id_tipo_usuario = 4; //El alumno siempre tendra como tipo de usuario 4
         //$alumno->codigo_alumno = $request->codigo_alumno; // No deberia ser posible cambiarlo una vez creado
         $alumno->contrasena = Hash::make($request->contrasena);
         //$alumno->indice_global  = $request->indice_global ;
