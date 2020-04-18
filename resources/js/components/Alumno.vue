@@ -483,10 +483,8 @@
 
         })
         .catch(function(error) {
-          console.log('Uy chele');
-          var ArrayErrores = Object.assign({}, error).response.data;
+          var ArrayErrores = Object.assign({}, error).response.data.errors;
 
-          console.log(ArrayErrores);
           // console.log('Error:', ArrayErrores);
 
           if(ArrayErrores['primer_nombre']){

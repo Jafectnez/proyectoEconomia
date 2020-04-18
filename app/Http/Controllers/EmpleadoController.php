@@ -210,16 +210,20 @@ class EmpleadoController extends Controller
 
       try {
         DB::beginTransaction();
+        // Buscar el Empleado a modificar
+        $empleado = Empleado::findOrFail($request->id_empleado); // Contiene toda la tabla empleado
+        $persona = Persona::findOrFail($empleado->id_persona);
+        $telefono = Telefono::where('id_persona', '=', $persona->id_persona)->first();
+        
         //Reglas y mensajes de errores para validación de persona
         $reglasPersona = [
           'primer_nombre' => 'required|max:50',
           'primer_apellido' => 'required|max:50',
-          'numero_identidad' => 'required|unique:persona,numero_identidad, '.$this->id_persona.', id_persona',
-          'correo_electronico' => 'required|unique:persona,correo_electronico, '.$this->id_persona.', id_persona',
+          'numero_identidad' => 'required|unique:persona,numero_identidad,'.$empleado->id_persona.',id_persona',
+          'correo_electronico' => 'required|unique:persona,correo_electronico,'.$empleado->id_persona.',id_persona',
           'fecha_nacimiento' => 'date|before_or_equal:'.date('Y-m-d', strtotime("-4 years")),
-          'telefono' => 'required|unique:telefono,telefono',
-
-          'usuario' => 'required|unique:empleado,usuario, '.$this->id_empleado.', id_empleado',
+          'telefono' => 'required|unique:telefono,telefono,'.$empleado->id_persona.',id_persona',
+          'usuario' => 'required|unique:empleado,usuario,'.$empleado->id_empleado.',id_empleado',
         ];
 
         $erroresPersona = [
@@ -241,11 +245,6 @@ class EmpleadoController extends Controller
 
         //Se validan los datos recibidos
         $this->validate($request, $reglasPersona, $erroresPersona);
-
-        // Buscar el Empleado a modificar
-        $empleado = Empleado::findOrFail($request->id_empleado); // Contiene toda la tabla empleado
-        $persona = Persona::findOrFail($empleado->id_persona);
-        $telefono = Telefono::where('id_persona', '=', $persona->id_persona)->first();
 
         $persona->primer_nombre = $request->primer_nombre;
         $persona->segundo_nombre = $request->segundo_nombre;

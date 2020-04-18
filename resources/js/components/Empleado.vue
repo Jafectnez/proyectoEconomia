@@ -277,7 +277,7 @@
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @click="cerrarModal()" data-dismiss="modal">Cerrar</button>
                     <button type="button" v-if="tipoAccion==1" @click="registrarEmpleado()" class="btn btn-primary">Guardar</button>
-                    <button type="button" v-if="tipoAccion==2" @click="actualizarEmpleado()" class="btn btn-primary">actualizar</button>
+                    <button type="button" v-if="tipoAccion==2" @click="actualizarEmpleado()" class="btn btn-primary">Actualizar</button>
                   </div>
               </div>
               <!-- /.modal-content -->
@@ -540,7 +540,9 @@
 
         })
         .catch(function(error) {
-          var ArrayErrores = Object.assign({}, error).response.data.errors;
+          var ArrayErrores = Object.assign({}, error).response.data;
+          console.log('Uy chele');
+          console.log(ArrayErrores);
 
           // console.log('Error:', ArrayErrores);
 
