@@ -540,9 +540,7 @@
 
         })
         .catch(function(error) {
-          var ArrayErrores = Object.assign({}, error).response.data;
-          console.log('Uy chele');
-          console.log(ArrayErrores);
+          var ArrayErrores = Object.assign({}, error).response.data.errors;
 
           // console.log('Error:', ArrayErrores);
 
