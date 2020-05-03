@@ -898,6 +898,7 @@
     },
     mounted() {
       this.listarEmpleado(1, this.buscar, this.criterio);
+      this.$ga.page('/Empleado');
     }
   }
 </script>

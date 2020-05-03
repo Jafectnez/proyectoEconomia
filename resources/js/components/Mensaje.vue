@@ -204,6 +204,7 @@
     },
     mounted() {
       this.listar();
+      this.$ga.page('/Mensaje');
     }
   }
 </script>

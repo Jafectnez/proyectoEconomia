@@ -444,6 +444,8 @@
     },
     mounted() {
       this.listarArchivo(1, this.buscar, this.criterio);
+      this.$ga.page('/Archivo');
+
     }
   }
 </script>

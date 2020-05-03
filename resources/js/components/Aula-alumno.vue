@@ -163,6 +163,7 @@
     },
     mounted() {
       this.listarAula(1, this.buscar, this.criterio);
+      this.$ga.page('/Aula/Alumno');
     }
   }
 </script>

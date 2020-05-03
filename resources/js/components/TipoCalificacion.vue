@@ -425,6 +425,7 @@
     },
     mounted() {
       this.listarTipoCalificacion(1, this.buscar, this.criterio);
+      this.$ga.page('/TipoCalificacion');
     }
   }
 </script>

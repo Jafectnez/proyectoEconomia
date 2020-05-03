@@ -440,6 +440,7 @@
     },
     mounted() {
       this.listarCargo(1, this.buscar, this.criterio);
+      this.$ga.page('/Cargo');
     }
   }
 </script>

@@ -368,6 +368,7 @@
     mounted() {
       this.listarClase(1, this.buscar, this.criterio);
       this.listarInformacion();
+      this.$ga.page('/Clase/Alumno');
     }
   }
 </script>
