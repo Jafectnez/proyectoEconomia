@@ -152,6 +152,7 @@
     },
     mounted() {
       this.listarEdificio(1, this.buscar, this.criterio);
+      this.$ga.page('/Edificio/Alumno');
     }
   }
 </script>

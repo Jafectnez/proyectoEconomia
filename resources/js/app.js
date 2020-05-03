@@ -4,11 +4,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+VueAnalytics = require('vue-analytics').default;
 require('./bootstrap');
 
 window.$ = window.jQuery = require('jquery');
 
 window.Vue = require('vue');
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +22,14 @@ window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+
+// Analytics
+Vue.use(VueAnalytics, {
+  id: 'UA-165294415-1',
+  checkDuplicatedScript: true
+})
+
+// Components
 
 Vue.component('persona', require('./components/Persona.vue').default);
 Vue.component('cargo', require('./components/Cargo.vue').default);
@@ -61,6 +71,28 @@ const app = new Vue({
     },
     created() {
       let me = this;
+      this.$ga.enable();
+
+      axios.interceptors.response.use(
+          response => {
+            var regex = /selectTipo|notificacion|buscar/
+            if (!regex.exec(response.config.url)) {
+              var datos = response.config.url.split('/');
+              this.$ga.event(datos[2], `${datos[2]}-${datos[1]}`, `${datos[2]}-${datos[1]}`, 1);
+            }
+        
+            return response;
+          },
+          error => {
+            var regex = /selectTipo|notificacion|buscar/
+            if (!regex.exec(error.config.url)) {
+              var datos = error.config.url.split('/');
+              this.$ga.event(datos[2], `${datos[2]}-${datos[1]}`, `${datos[2]}-${datos[1]}`, 0);
+            }
+
+            return;
+          }
+      );
 
       axios.get('notificacion/get').then(function(response) {
         me.notifications = response.data.slice(0, 10);

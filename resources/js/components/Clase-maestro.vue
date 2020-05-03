@@ -680,6 +680,7 @@
     },
     mounted() {
       this.listarClase(1, this.buscarClase, this.criterioClase);
+      this.$ga.page('/Clase/Maestro');
     }
   }
 </script>

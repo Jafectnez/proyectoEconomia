@@ -162,6 +162,7 @@
     },
     mounted() {
       this.listarGrado(1, this.buscar, this.criterio);
+      this.$ga.page('/Grado/Alumno');
     }
   }
 </script>

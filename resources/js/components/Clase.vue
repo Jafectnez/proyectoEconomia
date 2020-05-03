@@ -934,6 +934,8 @@
         });
       });
 
+      this.$ga.page('/Clase');
+
     }
   }
 </script>

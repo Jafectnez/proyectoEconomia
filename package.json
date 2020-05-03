@@ -1,6 +1,6 @@
 {
     "private": true,
-    "engines":{
+    "engines": {
         "node": "12.13.0",
         "npm": "6.9.0"
     },
@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "laravel-echo": "^1.5.4",
-        "pusher-js": "^5.0.0"
+        "pusher-js": "^5.0.0",
+        "vue-analytics": "^5.22.1"
     }
 }

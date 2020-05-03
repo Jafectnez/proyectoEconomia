@@ -425,6 +425,7 @@
     },
     mounted() {
       this.listarParcial(1, this.buscar, this.criterio);
+      this.$ga.page('/Parcial');
     }
   }
 </script>
