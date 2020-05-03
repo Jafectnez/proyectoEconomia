@@ -4,11 +4,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import VueAnalytics from 'vue-analytics';
 require('./bootstrap');
 
 window.$ = window.jQuery = require('jquery');
 
 window.Vue = require('vue');
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +22,13 @@ window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+
+// Analytics
+Vue.use(VueAnalytics, {
+  id: 'UA-165294415-1'
+})
+
+// Components
 
 Vue.component('persona', require('./components/Persona.vue').default);
 Vue.component('cargo', require('./components/Cargo.vue').default);

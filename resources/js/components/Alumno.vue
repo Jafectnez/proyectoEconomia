@@ -336,6 +336,9 @@
       }
     },
     methods: {
+      trackAnalytics(categoria, accion, label, value){
+        this.$ga.event(categoria, accion, label, value);
+      },
       listarAlumno(page, buscar, criterio){
         let me = this;
         var url = '/alumno?page=' + page + '&buscar='+ buscar + '&criterio='+ criterio;
@@ -401,6 +404,8 @@
               title: 'Error interno.',
               text: response.data.mensaje,
             });
+
+            trackAnalytics('registro', 'click', 'registro-alumno', 'failure')
           }else{
             me.cerrarModal();
             me.listarAlumno(1, '', 'primer_nombre');
@@ -410,6 +415,8 @@
               title: 'Registrado.',
               text: 'El registro ha sido guardado con éxito.',
             });
+
+            trackAnalytics('registro', 'click', 'registro-alumno', 'success')
           }
         })
         .catch(function(error) {
@@ -803,6 +810,7 @@
     },
     mounted() {
       this.listarAlumno(1, this.buscar, this.criterio);
+      this.$ga.page('/Alumno');
     }
   }
 </script>
