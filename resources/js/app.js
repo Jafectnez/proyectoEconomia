@@ -4,7 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import VueAnalytics from 'vue-analytics';
+VueAnalytics = require('vue-analytics').default;
 require('./bootstrap');
 
 window.$ = window.jQuery = require('jquery');
@@ -25,7 +25,8 @@ window.Vue = require('vue');
 
 // Analytics
 Vue.use(VueAnalytics, {
-  id: 'UA-165294415-1'
+  id: 'UA-165294415-1',
+  checkDuplicatedScript: true
 })
 
 // Components
@@ -70,6 +71,28 @@ const app = new Vue({
     },
     created() {
       let me = this;
+      this.$ga.enable();
+
+      axios.interceptors.response.use(
+          response => {
+            var regex = /selectTipo|notificacion|buscar/
+            if (!regex.exec(response.config.url)) {
+              var datos = response.config.url.split('/');
+              this.$ga.event(datos[2], `${datos[2]}-${datos[1]}`, `${datos[2]}-${datos[1]}`, 1);
+            }
+        
+            return response;
+          },
+          error => {
+            var regex = /selectTipo|notificacion|buscar/
+            if (!regex.exec(error.config.url)) {
+              var datos = error.config.url.split('/');
+              this.$ga.event(datos[2], `${datos[2]}-${datos[1]}`, `${datos[2]}-${datos[1]}`, 0);
+            }
+
+            return;
+          }
+      );
 
       axios.get('notificacion/get').then(function(response) {
         me.notifications = response.data.slice(0, 10);
